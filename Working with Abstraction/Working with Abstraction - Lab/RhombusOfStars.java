@@ -25,7 +25,6 @@ public class RhombusOfStars {
     }
 
     private static void printBottomPartRhombus(String emptyPlaces, int n) {
-
         int length = emptyPlaces.length();
         emptyPlaces = " ";
         for (int i = 1; i < n; i++) {
