@@ -6,7 +6,6 @@ import java.util.Map;
 public class StudentSystem {
     private Map<String, Student> repository;
 
-
     public StudentSystem() {
         this.repository = new HashMap<>();
 
@@ -27,7 +26,6 @@ public class StudentSystem {
             String view = String.format("%s is %s years old.", student.getName(), student.getAge());
 
             if (student.getGrade() >= 5.00) {
-
                 view += " Excellent student.";
             } else if (student.getGrade() < 5.00 && student.getGrade() >= 3.50) {
                 view += " Average student.";
