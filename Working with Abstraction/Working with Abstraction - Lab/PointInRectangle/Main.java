@@ -8,7 +8,6 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         Rectangle rectangle = fillRectangleWithPoints(scanner);
-
         int n = Integer.parseInt(scanner.nextLine());
         for (int i = 0; i < n; i++) {
             System.out.println(contains(rectangle, scanner));
@@ -21,7 +20,6 @@ public class Main {
 
         Point bottomLeftPoint = new Point(points[0], points[1]);
         Point topRightPoint = new Point(points[2], points[3]);
-
         Rectangle rectangle = new Rectangle(bottomLeftPoint, topRightPoint);
         return rectangle;
     }
@@ -30,7 +28,6 @@ public class Main {
         int[] pointCoordinate = Arrays.stream(scanner.nextLine().split("\\s+"))
                 .mapToInt(Integer::parseInt).toArray();
 
-        // checks:
         int currentX = pointCoordinate[0];
         int currentY = pointCoordinate[1];
 
