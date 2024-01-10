@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String[] inputData = scanner.nextLine().split("\\s+");
-
+        
         double priceForDay = Double.parseDouble(inputData[0]);
         int days = Integer.parseInt(inputData[1]);
         String season = inputData[2];
@@ -14,7 +14,6 @@ public class Main {
 
         PriceCalculator calculator = new PriceCalculator(priceForDay, days, season, discountType);
         calculatePriceWithoutDiscount(calculator);
-
         calculatePriceWithDiscount(calculator);
         System.out.println(calculator.toString());
     }
