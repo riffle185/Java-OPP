@@ -1,7 +1,7 @@
 package CardRank;
 
 public enum CardRank {
-    ACE,TWO,
+    ACE,TWO
     THREE,FOUR,
     FIVE,SIX,
     SEVEN,EIGHT,
